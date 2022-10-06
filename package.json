@@ -6,7 +6,7 @@
     "name": "Luis Ramírez",
     "url": "https://stratolark.dev"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -24,6 +24,7 @@
   "devDependencies": {
     "eslint-config-custom": "*",
     "prettier": "latest",
+    "prettier-plugin-tailwindcss": "^0.1.11",
     "turbo": "latest"
   },
   "packageManager": "yarn@1.22.15",
