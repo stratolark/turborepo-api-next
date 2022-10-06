@@ -1,6 +1,6 @@
-# Turborepo Docker starter
+# Turborepo Next.js, Express, Tailwind CSS, Docker
 
-This is an official Docker starter Turborepo.
+A Turborepo template based on [Turborepo Docker starter](https://github.com/vercel/turborepo/tree/main/examples/with-docker) and [Turborepo Tailwind Starter](https://github.com/vercel/turborepo/tree/main/examples/with-tailwind).
 
 ## What's inside?
 
@@ -13,6 +13,7 @@ This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package ma
 - `ui`: ui: a React component library
 - `eslint-config-custom`: `eslint` configurations for client side applications (includes `eslint-config-next` and `eslint-config-prettier`)
 - `eslint-config-custom-server`: `eslint` configurations for server side applications (includes `eslint-config-next` and `eslint-config-prettier`)
+- `tailwind-config`: tailwind-config.js and prettier-tailwind-plugin
 - `scripts`: Jest configurations
 - `logger`: Isomorphic logger (a small wrapper around console.log)
 - `tsconfig`: tsconfig.json;s used throughout the monorepo
@@ -24,9 +25,13 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 Run the following command:
 
 ```sh
-npx degit vercel/turborepo/examples/with-docker with-docker
-cd with-docker
-git init . && git add . && git commit -m "Init"
+npx degit https://github.com/stratolark/turborepo-api-next turborepo-api-next
+cd turborepo-api-next
+git init .
+git add .
+git commit -m "Init"
+yarn install
+yarn dev or yarn build
 ```
 
 ### Docker
@@ -62,3 +67,4 @@ This Turborepo has some additional tools already setup for you:
 - [ESLint](https://eslint.org/) for code linting
 - [Jest](https://jestjs.io) test runner for all things JavaScript
 - [Prettier](https://prettier.io) for code formatting
+- [Tailwind CSS](https://tailwindcss.com/) for css utilities
