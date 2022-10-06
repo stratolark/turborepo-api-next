@@ -1,6 +1,12 @@
 {
-  "name": "with-docker",
-  "version": "0.0.0",
+  "name": "stratolark",
+  "description": "First Monorepo",
+  "author": {
+    "email": "stratolark@gmail.com",
+    "name": "Luis Ramírez",
+    "url": "https://stratolark.dev"
+  },
+  "version": "0.1.0",
   "private": true,
   "workspaces": [
     "apps/*",
